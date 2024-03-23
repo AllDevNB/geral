@@ -11,11 +11,11 @@
 
 <style>
     
-    *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial Helvetica, Sans-serif;
+    font-family: times new roman;
 }
 
 body {
@@ -37,6 +37,37 @@ a{
     overflow-x: scroll;
     display: flex;
     text-align: justify;
+    scroll-behavior: smooth;
+}
+.buttons{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    top: 205px;
+}
+
+.buttons a{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    margin: 10px;
+    border-radius: 12px;
+    list-style: none;
+    Line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttons a:hover{
+    background: #ff8800;
+}
+
+.buttons span{
+    Opacity: 0;
 }
 
 .highlight .item{
@@ -59,12 +90,33 @@ a{
 .highlight .item .header{
     font-size: 1.5rem;
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 90px;
     font-weight: bold;
     letter-spacing: -1.4px;
+    text-shadow: 0 2px 4px #000;
 }
+
+.highlight p{
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: times new roman;
+    font-size: 13px;
+    text-shadow: 0 2px 4px #000;
+    text-transform: capitalize;
+}
+
 .border{
     width: 130px;
+    margin-top: -7px;
+    height: 1px;
+    background: #fff;
+    border-radius: 2.5px;
+}
+.borders{
+    width: 150px;
     margin-top: -7px;
     height: 1px;
     background: #fff;
@@ -99,15 +151,7 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
-}
-.highlight .item p{
-    text-align: center;
-    padding: 5px;
-    font-size: 13px;
-    margin-top: 20px;
-    Font-family: times new roman;
-    color: #fff;
-}
+
 .highlight .item:nth-child(2){
     background-image: url('https://play-lh.googleusercontent.com/proxy/iRrKgMPaeHZHpVgwLGhrbduLlnUOWXvb3cEuU4V538KFLiLYy30yoGD1tyYXaiNYNce72JPTb4icALwZoaWVkubGZF9U_0KwaP3lw00zJTQL9KFme3Oo=s1920-w1920-h1080');
 }
@@ -231,43 +275,54 @@ header a{
            
            <div class="highlight">
                
-               <a href="#" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <a href="#" id="1" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
                <div class="header">Olhos Famintos</div>
-               <div class="border"></div>
-               
+               <div class="borders"></div>
+               <br>
                <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
                </a>
                
                
-               <a href="https://iev.netcine.bz/html/storage.bunnycdn.com/html/content/conteudolb4/hotd/01dub/HOTD01DUB-BAIXO.mp4?md5=50o_6oQGZoCMljkayU3hxw&expires=1711193945" download="meu-filme" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <a id="2" href="https://iev.netcine.bz/html/storage.bunnycdn.com/html/content/conteudolb4/hotd/01dub/HOTD01DUB-BAIXO.mp4?md5=50o_6oQGZoCMljkayU3hxw&expires=1711193945" download="meu-filme" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
                <div class="header">Anaconda 4</div>
                <div class="border"></div>
-               
+               <br>
                <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
                </a>
                
-               <a href="#" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <a href="#" id="3" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
                <div class="header">Maze Runner</div>
                <div class="border"></div>
-               
+               <br>
                <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
                </a>
                
-               <a href="#" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <a href="#" id="4" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
                <div class="header">Ninja Assassin</div>
                <div class="border"></div>
-               
+               <br>
                <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
                </a>
                
-               <a href="#" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <a href="#" id="5" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
                <div class="header">Adão Negro</div>
                <div class="border"></div>
-               
+               <br>
                <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
                </a>
+               
+               <ul class="buttons">
+                   <a href="#1"><span>®</span></a>
+                   <a href="#2"><span>®</span></a>
+                   <a href="#3"><span>®</span></a>
+                   <a href="#4"><span>®</span></a>
+                   <a href="#5"><span>®</span></a>
+               </ul>
            </div>
            
+              
+              
+              
                       
            <div class="division">
            <div>Seriados actuais</div>
@@ -349,6 +404,7 @@ header a{
         </section>
    
     </main>
+    
     <br><br><br><br>
     <header>
         <ul class="items">
