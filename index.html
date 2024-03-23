@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Título da página</title>
+</head>
+
+<style>
+    
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial Helvetica, Sans-serif;
+}
+
+body {
+    background: #444;
+}
+
+a{
+    outline: none;
+    cursor: none;
+}
+.head{
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 3px 2px #000;
+    text-transform: uppercase;
+}
+
+.highlight{
+    overflow-x: scroll;
+    display: flex;
+    text-align: justify;
+}
+
+.highlight .item{
+    width: fit-content;
+    height: 230px;
+    background-image: url('https://cinepop.com.br/wp-content/uploads/2017/02/olhosfamintos3_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 20%;
+    margin: 3px;
+    margin-left: 0;
+    margin-top: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.highlight .item span{
+    opacity: 0;
+}
+.highlight .item .header{
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 100px;
+    font-weight: bold;
+    letter-spacing: -1.4px;
+}
+.border{
+    width: 130px;
+    margin-top: -7px;
+    height: 1px;
+    background: #fff;
+    border-radius: 2.5px;
+}
+.border1{
+    width: 350px;
+    margin-top: -7px;
+    height: 1px;
+    background: green;
+    border-radius: 2.5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border2{
+    width: 350px;
+    margin-top: -7px;
+    height: 1px;
+    background: #ff6940;
+    border-radius: 2.5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border3{
+    width: 350px;
+    margin-top: -7px;
+    height: 1px;
+    background: orange;
+    border-radius: 2.5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+.highlight .item p{
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    margin-top: 20px;
+    Font-family: times new roman;
+    color: #fff;
+}
+.highlight .item:nth-child(2){
+    background-image: url('https://play-lh.googleusercontent.com/proxy/iRrKgMPaeHZHpVgwLGhrbduLlnUOWXvb3cEuU4V538KFLiLYy30yoGD1tyYXaiNYNce72JPTb4icALwZoaWVkubGZF9U_0KwaP3lw00zJTQL9KFme3Oo=s1920-w1920-h1080');
+}
+
+.highlight .item:nth-child(3){
+    background-image: url('https://assets1.ignimgs.com/2014/09/01/maze-runner-1280jpg-dff603_160w.jpg?width=1280');
+}
+
+.highlight .item:nth-child(4){
+    background-image: url('https://images.moviesanywhere.com/be0e1caf539f348d4b56e4d1996c2538/fc28cc62-81c3-436e-b98b-4ccdcc8afaa7.jpg?w=2560&r=16x9');
+}
+
+.highlight .item:nth-child(5){
+    background-image: url('https://image.tmdb.org/t/p/w1280/oIELpa4PjMp6Ru7gOzpkNRxmcuN.jpg');
+}
+.episode{
+    overflow-x: scroll;
+    display: flex;
+    margin: 2px;
+}
+.episode a{
+    margin: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-family: times new roman;
+}
+
+.division{
+    background: transparent;
+    color: #fff;
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    padding: 20px 30px;
+}
+.division div{
+    font-size: 14px;
+}
+.division a{
+    Text-decoration: none;
+    color: #ff6940;
+    Align-items: center;
+    Text-align: center;
+    Text-transform: uppercase;
+}
+.division .go{
+    color: orange;
+}
+.division .go2{
+    color: green;
+}
+.sequence{
+    text-align: center;
+    display: flex;
+    margin-top: 30px;
+}
+.sequence .item{
+    background-image: url('https://images.justwatch.com/poster/8574924/s718/prison-break.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 65px;
+    width: 80px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    border-bottom: 2px solid #4263eb;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    background: #333;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: -45px;
+}
+
+header .items{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    Align-items: center;
+}
+
+header li{
+    list-style: none;
+    text-align: center;
+}
+
+header a{
+    Text-decoration: none;
+    font-size: 20px;
+    margin: -5px 30px 0px 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.link1{
+    text-align: center;
+    Align-items: center;
+    Justify-content: center;
+    Display: block;
+    margin: 10px;
+    
+}
+.link1 span{
+    Font-size: 12px;
+    Font-family:times new roman;
+}
+</style>
+<body>
+    
+    <main>
+        <section>
+           
+           
+           <div class="highlight">
+               
+               <a href="#" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <div class="header">Olhos Famintos</div>
+               <div class="border"></div>
+               
+               <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
+               </a>
+               
+               
+               <a href="https://iev.netcine.bz/html/storage.bunnycdn.com/html/content/conteudolb4/hotd/01dub/HOTD01DUB-BAIXO.mp4?md5=50o_6oQGZoCMljkayU3hxw&expires=1711193945" download="meu-filme" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <div class="header">Anaconda 4</div>
+               <div class="border"></div>
+               
+               <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
+               </a>
+               
+               <a href="#" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <div class="header">Maze Runner</div>
+               <div class="border"></div>
+               
+               <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
+               </a>
+               
+               <a href="#" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <div class="header">Ninja Assassin</div>
+               <div class="border"></div>
+               
+               <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
+               </a>
+               
+               <a href="#" class="item"><span>01010101001010101010101010100101010010101100101010111</span>
+               <div class="header">Adão Negro</div>
+               <div class="border"></div>
+               
+               <p>Os seus dados Semanal estao prestes a terminar. Registe um pacote de Internet via *155# para continuar a desfrutar da Internet com os melhores precos. Obrigado!</p>
+               </a>
+           </div>
+           
+                      
+           <div class="division">
+           <div>Seriados actuais</div>
+           <a href="#" class="go2">Mais &nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+           </div>
+           
+           <div class="border1"></div>
+           <div class="episode">
+               <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE4l2kDUoixgqkC9fYiuN3YeB8kydJu2A-eg&usqp=CAU" alt="" width="100.5">The gifted</a>
+               
+               <a href="#"><img src="https://m.media-amazon.com/images/M/MV5BMzEyNjk4ODItMTM4MS00MzIyLWFmYjYtNDdkOGQ2N2Y1YTc1XkEyXkFqcGdeQXVyMTUyMzg5NzM2._V1_.jpg" alt="" width="106">Black Knight</a>
+               
+               <a href="#"><img src="https://images.justwatch.com/poster/238010492/s332/temporada-7" alt="" width="105">Os 100</a>
+               
+               <a href="#"><img src="https://images.justwatch.com/poster/310208896/s592/temporada-2" alt="" width="105">Halo</a>
+               
+               <a href="#"><img src="https://br.web.img3.acsta.net/pictures/21/12/16/10/23/3977393.jpg" alt="" width="111">Naomi</a>
+           </div>
+           
+           
+           
+           <div class="sequence">
+               <a href="#" class="item">1º</a>
+               
+               <a href="#" class="item">2º</a>
+               
+               <a href="#" class="item">3º</a>
+               
+               <a href="#" class="item">4º</a>
+               
+               <a href="#" class="item">5º</a>
+           </div>
+           
+           
+           
+           
+           
+           
+           <div class="division">
+           <div>Filmes actuais</div>
+           <a href="#">Mais &nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+           </div>
+           
+           <div class="border2"></div>
+           <div class="episode">
+               <a href="#"><img src="https://br.web.img3.acsta.net/pictures/18/05/02/20/16/3134474.jpg" alt="" width="100">A vingança</a>
+               
+               <a href="#"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/23/05/29/15/29/0726500.jpg" alt="" width="109">O resgate</a>
+               
+               <a href="#"><img src="https://stormgrass.com/content/images/2023/12/762812-rebel-moon-part-one-a-child-of-fire-0-600-0-900-crop.jpg" alt="" width="100">Rebel Moon</a>
+               
+               <a href="#"><img src="https://musicart.xboxlive.com/7/99941100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt="" width="110">O livro de Eli</a>
+               
+               <a href="#"><img src="https://play-lh.googleusercontent.com/NZVX-GzNvaGUocLGSQNUtDB-H084hgOQpRIYmg_sTEYV2BQzgH0Iqm9jCJe47u3nSqA" alt="" width="106">Mad Max</a>
+               <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5d7HXDrz3LC4Aji4nz1p5SVte-VeqoNtJJ5DafK9uAw&s" alt="" width="106">Aquaman</a>
+           </div>
+           
+           
+           
+           <div class="division">
+           <div>Desenhos animados</div>
+           <a href="#" class="go">Mais &nbsp;&nbsp;<i class="fa fa-angle-right"></i></a>
+           </div>
+           
+           <div class="border3"></div>
+           <div class="episode">
+               <a href="#"><img src="https://lumiere-a.akamaihd.net/v1/images/p_moana_20530_214883e3.jpeg" alt="" width="100">Moana</a>
+               
+               <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6tZJADo3zgahccaXS__ggVuA0zzNfOrhIuA&usqp=CAU" alt="" width="101">A era do gelo</a>
+               
+               <a href="#"><img src="https://br.web.img2.acsta.net/pictures/16/10/18/16/29/576071.jpg" alt="" width="102">O poderoso Chefinho</a>
+               
+               <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaio3ZpsNC1BCdolv0_6TTvCPf2C_P_CsjglISQoPpEQ&s" alt="" width="101">Arcane</a>
+               
+               <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBEHJQqOfO1MoNPaQdsaY5G_a4o4RuloAHTt7ZK_QA6A&s" alt="" width="111">Rick e Morty</a>
+               
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/f5/Chicken_Run_Dawn_of_the_Nugget_-_poster.jpg/230px-Chicken_Run_Dawn_of_the_Nugget_-_poster.jpg" alt="" width="100">A fuga das galinhas</a>
+           </div>
+        </section>
+   
+    </main>
+    
+    <header>
+        <ul class="items">
+            <li><a href="#" class="link1"><I class="fa fa-home"></i><br><span>Home</span></a></li>
+
+           <li><a href="#"><I class="fa fa-list"></i></a></li>
+           <li><a href="#"><I class="fa fa-heart"></i></a></li>
+           <li><a href="#"><I class="fa fa-search"></i></a></li>
+           <li><a href="#"><I class="fa fa-cog"></i></a></li>
+           
+            
+        </ul>
+    </header>
+    
+</body>
+<script>
+    
+    $(document).ready(function() {
+    $('.toggle').click(function() {
+        $('.sidebar').toggleClass('open')
+        $('.logo').toggleClass('effect')
+    })
+})
+
+</script>
+</html>
+
+
+<span class="ri--arrow-drop-right-line"></span>
